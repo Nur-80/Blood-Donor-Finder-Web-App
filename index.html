@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donor Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>🩸 Blood Donor Finder</h1>
+    <a href="login.html">
+        <button>Admin Login</button>
+    </a>
+    <h2>Search Donor</h2>
+    <input type="text" id="searchBlood" placeholder="Blood Group" oninput="liveSearch()">
+    <input type="text" id="searchLocation" placeholder="Location" oninput="liveSearch()">
+    <button onclick="searchDonor()">Search</button>
+
+    <table>
+        <thead>
+        <tr>
+        <th>Name</th>
+        <th>Blood</th>
+        <th>Phone</th>
+        <th>Location</th>
+        <th>Call</th>
+        </tr>
+        </thead>
+
+        <tbody id="donorTable"></tbody>
+    </table>
+
+    <div class="footer">
+        <p>Created by Nur | 2026-03-11</p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

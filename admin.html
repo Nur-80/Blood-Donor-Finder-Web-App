@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Admin Panel</h2>
+
+    <h3>Add Donor</h3>
+    <input type="text" id="name" placeholder="Name">
+    <input type="text" id="blood" placeholder="Blood Group">
+    <input type="text" id="phone" placeholder="Phone">
+    <input type="text" id="location" placeholder="Location">
+
+    <button onclick="addDonor()">Add Donor</button>
+
+    <h3>Donor List</h3>
+    <button id="showAdminBtn" onclick="toggleAdminShow()">Show Donor List</button>
+
+    <table>
+        <thead>
+            <tr>
+            <th>Name</th>
+            <th>Blood</th>
+            <th>Phone</th>
+            <th>Location</th>
+            <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody id="donorTableAdmin"></tbody>
+    </table>
+
+    <div class="footer">
+        <p>Created by Nur | 2026-03-11</p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
